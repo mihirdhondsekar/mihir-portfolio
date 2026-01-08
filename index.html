@@ -5,39 +5,96 @@
   <title>Mihir Dhondsekar | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
+      background: linear-gradient(120deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
     }
+
     header {
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
-      background: #020617;
     }
-    h1 {
-      font-size: 42px;
+
+    header h1 {
+      font-size: 48px;
       margin-bottom: 10px;
+      letter-spacing: 1px;
     }
+
+    header p {
+      font-size: 20px;
+      color: var(--muted);
+    }
+
     section {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
+
     .card {
-      background: #1e293b;
-      padding: 25px;
-      border-radius: 14px;
-      margin-bottom: 25px;
+      background: var(--card);
+      padding: 28px;
+      border-radius: 18px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: var(--accent);
+    }
+
     ul {
-      line-height: 1.8;
+      padding-left: 18px;
     }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
-      color: #9ca3af;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .highlight {
+      border-left: 4px solid var(--accent);
+      padding-left: 16px;
     }
   </style>
 </head>
@@ -45,53 +102,70 @@
 
 <header>
   <h1>Mihir Dhondsekar</h1>
-  <p>Aspiring IT & Web Professional | Portfolio</p>
+  <p>B.Tech ECS Student • Programmer • Learner</p>
 </header>
 
 <section>
 
-  <div class="card">
+  <div class="card highlight">
     <h2>About Me</h2>
     <p>
-      I am an aspiring IT and web professional currently pursuing my B.Tech.
-      I enjoy building practical projects and continuously improving my technical skills.
+      I am a B.Tech Electronics and Computer Science student who is passionate
+      about programming and building real-world projects. I enjoy learning new
+      technologies and improving my skills every day.
     </p>
   </div>
 
   <div class="card">
     <h2>Skills</h2>
     <ul>
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript (Basics)</li>
-      <li>Responsive Web Design</li>
-      <li>Git & GitHub</li>
-      <li>Basic Frontend Development</li>
-      <li>Problem Solving</li>
-      <li>Project Development</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>C</li>
+      <li>C++</li>
     </ul>
   </div>
 
   <div class="card">
     <h2>Projects</h2>
     <ul>
-      <li><strong>Automated Water Irrigation System</strong> – Smart system for automatic water control using sensors.</li>
-      <li><strong>Job Portal Website</strong> – Web platform for job listings and applications.</li>
-      <li><strong>Quiz Website</strong> – Interactive quiz application with scoring.</li>
-      <li><strong>Expense Tracker</strong> – Web app to track daily expenses.</li>
+      <li><strong>Automated Water Irrigation System</strong></li>
+      <li><strong>Job Portal Website</strong></li>
+      <li><strong>Quiz Website</strong></li>
+      <li><strong>Expense Tracker</strong></li>
     </ul>
   </div>
 
   <div class="card">
     <h2>Education</h2>
-    <ul>
-      <li>
-        <strong>B.Tech – Electronics and Computer Science (ECS)</strong><br>
-        Shah & Anchor Kutchhi Engineering College<br>
-        <em>2023 – 2027</em>
-      </li>
-      <br>
-      <li>
-        <strong>HSC</strong> – 68.50%
-      </li>
-      <li>
+    <p>
+      <strong>B.Tech – Electronics and Computer Science (ECS)</strong><br>
+      Shah & Anchor Kutchhi Engineering College<br>
+      <em>2023 – 2027</em>
+    </p>
+    <p>
+      <strong>HSC:</strong> 68.50%<br>
+      <strong>SSC:</strong> 66.40%
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Contact Me</h2>
+    <p>📧 <a href="mailto:mihir.17898@sakec.ac.in">mihir.17898@sakec.ac.in</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/mihir-dhondsekar-56312128b" target="_blank">LinkedIn Profile</a></p>
+    <p>💻 <a href="https://github.com/mihirdhondsekar" target="_blank">GitHub Profile</a></p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Mihir Dhondsekar • Built with HTML & CSS
+</footer>
+
+</body>
+</html>
+
+
